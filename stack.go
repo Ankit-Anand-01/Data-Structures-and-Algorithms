@@ -13,8 +13,7 @@ func (s *Stack) Push(i int) {
 	s.items = append(s.items, i)
 }
 
-//Pop will remove the value at the end
-//and returns it
+//Pop will remove the value from the end
 func (s *Stack) Pop() int {
 	//index value of last element
 	le := len(s.items) - 1
