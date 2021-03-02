@@ -15,7 +15,6 @@ func (q *Queue) Enqueue(i int) {
 }
 
 //Dequeue removes a value at the front
-//and returns the removed value
 func (q *Queue) Dequeue() int {
 	toRemove := q.items[0]
 	q.items = q.items[1:]
@@ -25,6 +24,7 @@ func (q *Queue) Dequeue() int {
 func main() {
 	myQueue := Queue{}
 	fmt.Println(myQueue)
+	//adding values in the queue using enqueue func
 	myQueue.Enqueue(11)
 	myQueue.Enqueue(22)
 	myQueue.Enqueue(33)
@@ -34,6 +34,7 @@ func main() {
 	myQueue.Enqueue(77)
 	myQueue.Enqueue(88)
 	fmt.Println(myQueue)
+	//removing value using dequeue
 	myQueue.Dequeue()
 	fmt.Println(myQueue)
 
