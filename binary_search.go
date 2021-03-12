@@ -1,7 +1,8 @@
+//Binary search in Golang
 package main
 
 import "fmt"
-
+//defining func for binary search
 func Binarysearch(data []int, value int) bool {
 	size := len(data)
 	low := 0
