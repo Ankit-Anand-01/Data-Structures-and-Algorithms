@@ -25,5 +25,5 @@ func fibonacci(n int) int {
 }
 
 func main() {
-	fmt.Println(fibonacci(50))
+	fmt.Println(fibonacci(20))
 }
