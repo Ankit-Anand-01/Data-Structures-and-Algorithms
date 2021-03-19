@@ -1,4 +1,3 @@
-//Selection sort in Golang
 package main
 
 import "fmt"
@@ -9,7 +8,7 @@ func Selection_Sort(array []int, size int) []int {
 	for i := 0; i < size-1; i++ {
 		min_index = i
 
-		// Finding index of minimum element
+		// Find index of minimum element
 		for j := i + 1; j < size; j++ {
 			if array[j] < array[min_index] {
 				min_index = j
